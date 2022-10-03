@@ -1,0 +1,74 @@
+/* Bootstrap Modal  */
+.modal-dialog {
+    max-width: 1000px;
+    padding: 1.5rem;
+}
+.modal-content {
+    overflow: hidden;
+    border-radius: $radius;
+    border: none;
+    height: 70vh;
+    @include responsive( tablet ){
+        height: 90vh;
+    }
+}
+.modal-body {
+    border: none;
+    position: relative;
+    @include flex( row );
+    @include responsive( tablet ) {
+        padding: 0;
+    }
+}
+.btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    @include transition;
+}
+.modal__info {
+    text-align: center;
+    @include transition;
+    @include responsive( tablet ) {
+        padding: 0 2rem;
+    }
+}
+.modal__title {
+    font: normal 600 clamp( 3rem, 5vw, 5rem ) $font--2;
+}
+.modal__text {
+    margin: 2rem 0;
+    text-align: start;
+}
+.modal__price {
+    font: normal 600 clamp( 3rem, 5vw, 5rem ) $font--1;
+    @include flex( row );
+}
+.modal__price--sup {
+    font: normal 400 $m-size $font--1;
+    top: 0;
+}
+.modal-body img {
+    display: none;
+    @include responsive( tablet ) {
+        display: block;
+        max-width: 350px;
+        object-fit: cover;
+        height: 90vh;
+    }
+}
+
+// Bootstrap Card
+.card {
+    border-radius: $radius;
+    overflow: hidden;
+    border: none;
+}
+.card-img-top {
+    object-fit: cover;
+    @include h-w( 250px, 100% );
+}
+.card-body {
+    background-color: $color__white--2;
+}
