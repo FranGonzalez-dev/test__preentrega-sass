@@ -19,11 +19,11 @@
     margin-bottom: 4rem;
     position: relative;
     overflow: hidden;
-    @include flex(column, unset, unset);
+    @include flex( column, unset, unset );
     &__image {
         border-radius: $radius;
         object-fit: cover;
-        @include h-w(200px, 100%);
+        @include size(200px, 100%);
         @include responsive(tablet) {
             height: 350px;
         }
@@ -88,12 +88,12 @@
     cursor: pointer;
     margin-bottom: 1.5rem;
     gap: $gap;
-    @include h-w(50px, 100%);
+    @include size(50px, 100%);
     @include flex(row, start);
     &__image {
         object-fit: cover;
         border-radius: $radius;
-        @include h-w(50px, 50px);
+        @include size(50px, 50px);
     }
     &__content {
         height: 100%;

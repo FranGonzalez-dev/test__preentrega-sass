@@ -9,7 +9,6 @@
     margin: 0 auto;
 }
 
-
 @mixin flex ( $dir: column, $just: center, $align: center ) {
     display: flex;
     flex-direction: $dir;
@@ -21,7 +20,7 @@
     transition: $value .2s ease-in-out;
 }
 
-@mixin h-w ($height: 100%, $width: 100%) {
+@mixin size ($height: 100%, $width: 100%) {
     height: $height;
     width: $width;
 }

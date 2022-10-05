@@ -42,7 +42,7 @@
         color: $color__primary;
         font: normal 800 $l-size $font--1;
         margin: 0 auto;
-        @include h-w( 90px, 90px );
+        @include size( 90px, 90px );
         @include flex;
         @include transition;
     }
@@ -53,7 +53,7 @@
     }
     &__text {
         text-align: center;
-        @include h-w;
+        @include size;
     }
     & p span { font-style: italic; }
     @include responsive( tablet ) {

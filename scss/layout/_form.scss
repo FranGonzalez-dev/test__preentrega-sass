@@ -41,7 +41,7 @@
             left: 0px;
             top: 10px;
             z-index: -1;
-            @include h-w( 5px, 100%);
+            @include size( 5px, 100%);
         }
     }
     &__text {
@@ -52,7 +52,7 @@
         border-radius: $radius;
         @include flex;
         @include transition;
-        @include h-w( 5rem, 100% );
+        @include size( 5rem, 100% );
         &::placeholder {
             font-size: 16px;
             opacity: 0;

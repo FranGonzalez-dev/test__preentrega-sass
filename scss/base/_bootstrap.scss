@@ -67,7 +67,7 @@
 }
 .card-img-top {
     object-fit: cover;
-    @include h-w( 250px, 100% );
+    @include size( 250px, 100% );
 }
 .card-body {
     background-color: $color__white--2;

@@ -2,17 +2,17 @@
 
 .hero {
     position: relative;
-    @include h-w(100vh, 100%);
+    @include size(100vh, 100%);
     &__background {
         object-fit: cover;
-        @include h-w;
+        @include size;
     }
     &__text {
         padding: 1rem;
         position: absolute;
         text-align: center;        
         z-index: 1;
-        @include h-w;
+        @include size;
         @include flex;
         &--title {
             color: $color__white--1;
